@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #202124;
+}
+.row {
+    width: 100%;
+    text-align: center;
+}
+
+/* Header Related CSS */
+header, .container {
+    margin: 0px 10px;
+}
+.menus {
+    display: flex;
+    height: 50px;
+    justify-content: right;
+    gap: 1rem;
+    align-items: center;
+    margin: 5px 10px;
+}
+.menus .menu-item {
+    min-width: 1.5rem;
+}
+.menus .menu-item a {
+    text-decoration: none;
+}
+.menus .menu-item a:hover {
+    text-decoration: underline;
+}
+
+.menu-item.app-list {
+    fill: #585A5C;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+.menu-item.app-list svg {
+    margin-top: 3px;
+}
+.menu-item.app-list:hover {
+    background-color: rgba(60,64,67,.08);
+    border-radius: 50%;
+}
+.btn-signin {
+    background-color: #1A73E8;
+    color: white;
+}
+.btn-signin:hover {
+    background-color: #1A73E8;
+    color: white;
+}
+
+/* Main Body Related CSS */
+.body-area {
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+/* Logo Related CSS */
+.logo-area {
+    margin-bottom: 20px;
+}
+.logo-area .logo {
+    height: 92px;
+}
+
+/* Search Box Related CSS */
+.search-box {
+    display: flex;
+    z-index: 3;
+    min-height: 44px;
+    background: #fff;
+    border: 1px solid #DFE1E5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 638px;
+    width: auto;
+    max-width: 584px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 8px 0 14px;
+}
+.search-box:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+.search-input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: rgba(0,0,0,.87);
+    outline: none;
+    font-size: 22px;
+    padding: 0px 8px;
+}
+.search-item {
+    min-width: 1.7rem;
+    margin: 0px 2px;
+    font-size: 20px;
+    color: gray;
+}
+
+/* Related Search Button Related CSS */
+.button-area {
+    margin: 20px 0px;
+}
+
+button {
+    background-color: #F8F9FA;
+    border: 1px solid #F8F9FA;
+    border-radius: 4px;
+    color: #3C4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #F8F9FA;
+    border: 1px solid #DADCE0;
+    color: #202124;
+}
+
+
+.lang-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Footer Related CSS */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+footer .footer-info {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #202124;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .footer-menus {
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .footer-menus a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: #202124;
+}
+footer .footer-menus a:hover {
+    text-decoration: underline;
+}
+footer .footer-menus .menu-area {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* CSS for Responsive */
+@media(max-width:767px) {
+    .logo-area .logo {
+        height: 70px;
+    }
+}
